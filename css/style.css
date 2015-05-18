@@ -1,3 +1,5 @@
+/*/////////// GLOBAL //////////*/
+
 body {
 	font-family: 'Squada One', sans-serif;
 	background: black;
@@ -10,13 +12,36 @@ header {
 	height: 10%;
 }
 
-a {
+#background {
+	width: 100%;
+}
+
+/*/////////// NAVIGATION //////////*/
+
+
+nav a {
 	text-decoration: none;
 	color: white;
 	font-size: 200%;
 	margin-left: 1%;
 }
 
-a:hover {
+nav a:hover {
 	color: black;
 }
+
+nav a.home {
+	background: url(../images/devil-emoji.png) no-repeat;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+
+}
+
+
+/* min-height
+max-height */
