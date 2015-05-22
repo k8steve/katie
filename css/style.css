@@ -57,11 +57,8 @@ nav a.home {
 } */ 
 
 
-/* min-height
-max-height */
-
-
 /*/////////// VIDEO //////////*/
+
 .wrapper {
 	width: 90%;
 	margin-left: auto;
@@ -97,16 +94,12 @@ max-height */
   height: 100px;
   margin: 0;
   transform-style: preserve-3d;
-  color: white;
-  font-size: 1em;
-  text-align: center;
-  background-color: rgba(84, 12, 14, .6);
   transition: 1s;
 }
 
 .bottom {
   color: white;
-  font-size: 1em;
+  font-size: 1.65em;
   text-align: center;
   display: block;
   margin-top: 10px;
