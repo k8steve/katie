@@ -1,0 +1,67 @@
+
+.wrapper {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+  padding-top: 10%;
+}
+
+.container {
+  width: auto;
+  height: auto;
+  max-width: 700px;
+  position: relative;
+  margin-bottom: 10%;
+
+}
+
+.box {
+  width: 100%;
+  height: auto;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 8000px;
+}
+
+.box .front {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  transform-style: preserve-3d;
+  transition: .3s linear;
+}
+
+.box .front img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.box .bottom {
+  width: 100%;
+  margin: 0;
+  transform-style: preserve-3d;
+  transition: .3s linear;
+}
+
+.bottom {
+  color: white;
+  font-size: 1.65em;
+  text-align: center;
+  display: block;
+  line-height: 1.2;
+  height: 100px;
+ 
+}
+
+.box .front  { transform: rotateY(   0deg ) translateZ( 50px ); }
+.box .bottom { transform: rotateX( -90deg ) translateZ( -50px ); }
+
+
+.box:hover .front {
+  transform: rotateX( 30deg ) translateZ(  0px );
+}
+
+.box:hover .bottom{
+transform: rotateX( -60deg ) translateZ( -50px ) ;
+}
