@@ -1,9 +1,9 @@
 /*/////////// GLOBAL //////////*/
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Numans', sans-serif;
 	background: black;
-  font-weight: 300;
+  font-weight: auto;
 }
 
 #background {
@@ -26,11 +26,18 @@ footer {
 }
 
 .wrapper {
-  padding-top: 5%;
   clear: both;
   margin-left: 5%;
   margin-right: 5%;
+  padding-top: 5%;
 }
+
+.banner #katie {
+  float: left;
+  color: white;
+  font-size: 2em;
+}
+
 
 /*/////////// NAVIGATION //////////*/
 header {
@@ -48,14 +55,19 @@ header {
 #navbar a {
   text-decoration: none;
   color: white;
-  font-size: 1.3em;
-  letter-spacing: .02em;
-  margin-left: 1%;
+  font-size: 1.1em;
+  letter-spacing: .04em;
+  margin-left: 1.5%;
+  float: right;
 }
 
 
 #navbar a:hover {
 	color: black;
+}
+
+#navbar a:first-child {
+  padding-right:5%;
 }
 
 
@@ -106,12 +118,19 @@ header {
 /*/////////// MUSIC //////////*/
 
 #itunes a {
-  color: white;
+  display: inline-block;
   text-decoration: none;
-  float: right;
+  height: 52px;
+  width: 159px;
+  background-image: url(../images/itunes-sprite.jpg);
+  background-position: 0 52px;
+  margin-bottom: 1.5%;
+}
+
+#itunes a:hover {
+  background-image: none;
 }
 
 #soundcloud {
-  padding-left: 5%;
-  padding-right: 5%;
+
 }
