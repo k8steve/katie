@@ -32,14 +32,15 @@ footer {
   padding-top: 5%;
 }
 
-.banner #katie {
-  float: left;
-  color: white;
-  font-size: 2em;
-}
-
 
 /*/////////// NAVIGATION //////////*/
+
+.banner #katieGotBandz {
+  color: white;
+  font-size: 2em;
+  padding-top: .1em;
+}
+
 header {
 	position: fixed;
 	width: 100%;
@@ -47,44 +48,73 @@ header {
   z-index: 2;
 }
 .banner {
-  padding-top: .75%;
-  padding-bottom: .75%;
+  width: 100%;
   background: rgba(0,0,0,0.6);
 }
 
-#navbar a {
+li a {
   text-decoration: none;
   color: white;
   font-size: 1.1em;
   letter-spacing: .04em;
-  margin-left: 1.5%;
-  float: right;
+  margin-right: .75em;
 }
-
 
 #navbar a:hover {
-	color: black;
-}
+    color: black;
+  }
 
-#navbar a:first-child {
-  padding-right:5%;
-}
+@media screen and (min-width: 321px){
+  ul {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+
+  li {
+    display: inline-block;
+    width: auto;
+    height: auto;
+  } 
+
+  ul li:last-child a{
+    margin-right: 0px;
+  }
+
+  .banner {
+    height: 4.1em;
+  }
+
+  .banner #katieGotBandz{
+    text-align: center;
+  }
+
+  #background {
+    background-position: 40% 0;
+  }
+} /* end TABLET media query */
+
+@media screen and (min-width: 668px) {
+  .banner #katieGotBandz {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    margin-top: .6em;
+    width: auto;
+  }
+
+  .banner {
+    height: 2.5em;
+  }
+
+} /* end COMPUTER media query */
 
 
-/*.threed {
-	text-shadow: 0 .5px 0 #ccc,
-               0 1px 0 #c9c9c9,
-               0 1.5px 0 #bbb,
-               0 2px 0 #b9b9b9,
-               0 2.5px 0 #aaa,
-               0 3px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
-} */
 
 /*/////////// BIO //////////*/
 
@@ -112,7 +142,6 @@ header {
   left: 0;
   right: 0;
   background-color: (0,0,0,.7)
-  /*background-image: url(../images/broken.png);*/
 }
 
 /*/////////// MUSIC //////////*/
