@@ -9,7 +9,7 @@ body {
 #background {
 	width: 100%;
   z-index: 0;
-  background-image: url(../images/katie-background.jpg);
+  background-image: url(../images/katie_background.gif);
   background-size: cover;
   position: fixed;
   height: 100%;
@@ -35,21 +35,36 @@ footer {
 
 /*/////////// NAVIGATION //////////*/
 
-.banner #katieGotBandz {
-  color: white;
-  font-size: 2em;
-  padding-top: .1em;
-}
-
 header {
 	position: fixed;
 	width: 100%;
 	height: auto;
   z-index: 2;
 }
+
 .banner {
   width: 100%;
   background: rgba(0,0,0,0.6);
+}
+
+.banner #katieGotBandz {
+  padding-top: .2em;
+  padding-left: .5em;
+  display: block;
+  width: auto;
+  -webkit-filter: type(0px);
+  -moz-filter: type(0px);
+  -ms-filter: type(0px);
+  -o-filter: type(0px);
+  filter: blur(0px);
+}
+
+.blur a img:hover{
+  -webkit-filter: type(5px);
+  -moz-filter: type(5px);
+  -ms-filter: type(5px);
+  -o-filter: type(5px);
+  filter: blur(5px);
 }
 
 li a {
@@ -63,6 +78,26 @@ li a {
 #navbar a:hover {
     color: black;
   }
+
+ul:before {
+  content: "\f0c9";
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 1em;
+  display: block;
+}
+
+ul {
+  display: block;
+  position: relative;
+  float: right;
+  padding-top: 1em;
+  max-height: 1em;
+  height: auto;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  width: 160px;
+}
 
 @media screen and (min-width: 321px){
   ul {
