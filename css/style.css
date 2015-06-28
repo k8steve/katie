@@ -63,7 +63,10 @@ li a {
   font-size: 1.1em;
   letter-spacing: .04em;
   text-shadow: 1px 1px 1px black; 
-  padding-right: 10%;
+  line-height: 1.5em;
+}
+li:first-child {
+  padding-top: .3em;
 }
 
 #navbar a:hover {
@@ -79,7 +82,7 @@ ul:before {
   position: relative;
   top: 0;
   padding-top: .5em;
-  padding-right: .5em;
+  padding-right: .9em;
 }
 
 ul {
@@ -117,7 +120,7 @@ ul.open{
     display: inline-block;
     width: auto;
     height: auto;
-    margin-r
+    margin-right: .6em;
   } 
 
   ul li:last-child a{
@@ -131,7 +134,12 @@ ul.open{
   #background {
     background-position: 40% 0;
   }
-} /* end tablet/phone media query */
+
+  li:first-child {
+  padding-top: 0;
+  }
+
+} /* end tablet media query */
 
 @media screen and (min-width: 668px) {
   .banner #katieGotBandz {
@@ -158,6 +166,10 @@ ul.open{
     background-color: black;
   }
 
+  li a {
+    line-height: 1em;
+  }
+
 } /* end COMPUTER media query */
 
 
@@ -165,33 +177,70 @@ ul.open{
 /*/////////// BIO //////////*/
 
 #biopic {
-  margin-top: 100px;
   position: absolute;
   width: 100%;
   height: 100%;
+  display: block;
+  padding-top: 100px;
 }
 
 #bioActive {
   color: #C32AA9;
 }
 
-#biopic img{
-  padding-left: 10%;
-  float: left;
-}
 
 .bio {
-  position: absolute;
-  float: right;
   margin: 0 auto;
-  width: 35%;
-  right: 15%;
-  top: 220px;
   color: #C32AA9;
   text-align: justify;
   line-height: 1.4em;
 }
 
+@media screen and (min-width: 321px){
+  .bio {
+    position: relative;
+    float: none;
+    clear: both;
+    margin: 5%;
+    padding-top: 1%;
+  }
+
+  #biopic {
+    clear: both;
+    float: none;
+    position: relative;
+    text-align: center;
+  }
+} /*end tablet media query for BIO*/
+
+@media screen and (min-width: 730px){
+  .bio {
+  display: block;
+  position: absolute;
+  float: right;
+  width: 45%;
+  right: 5%;
+  margin: 0;
+  padding-right: 5%;
+  top: 220px;
+  }
+
+  #biopic {
+  padding-left: 5%;
+  float: left;
+  text-align: left;
+}
+} /*end desktop media query for BIO*/
+
+@media screen and (max-width: 840px){
+  .bio {
+    padding-right: 0;
+  }
+
+  #bop[oc {
+    padding-left: 5%;
+  }
+}
 
 /*/////////// MUSIC //////////*/
 #itunes #getKatie{
