@@ -49,19 +49,21 @@ header {
 	width: 100%;
 	height: auto;
   z-index: 2;
+  font-family: 'FontAwesome', sans-serif;
   }
 
-.banner #katieGotBandz{
+.banner #katieGotBandz {
 text-align: center;
 }
+
 
 li a {
   text-decoration: none;
   color: white;
   font-size: 1.1em;
   letter-spacing: .04em;
-  margin-right: .75em;
   text-shadow: 1px 1px 1px black; 
+  padding-right: 10%;
 }
 
 #navbar a:hover {
@@ -94,6 +96,7 @@ ul {
   overflow-y: hidden;
   width: 160px;
   transition: max-height .5s linear;
+  list-style-type: none;
 }
 
 ul.open{
@@ -114,6 +117,7 @@ ul.open{
     display: inline-block;
     width: auto;
     height: auto;
+    margin-r
   } 
 
   ul li:last-child a{
@@ -127,7 +131,7 @@ ul.open{
   #background {
     background-position: 40% 0;
   }
-} /* end TABLET media query */
+} /* end tablet/phone media query */
 
 @media screen and (min-width: 668px) {
   .banner #katieGotBandz {
@@ -138,11 +142,20 @@ ul.open{
     float: right;
     margin-top: .6em;
     width: auto;
+    margin-right: 5%;
+  }
+
+  li {
     margin-right: 1em;
+  }
+
+  li:last-child {
+    margin-right: 0em;
   }
 
   .banner {
     height: 2.5em;
+    background-color: black;
   }
 
 } /* end COMPUTER media query */
@@ -181,43 +194,66 @@ ul.open{
 
 
 /*/////////// MUSIC //////////*/
-
-
-
 #itunes #getKatie{
   color: white;
   font-family: 'Anton';
-  font-size: 7em;
-  float: right;
-  display: inline-block;
-  padding-top: 65px;
-  padding-right: 5px;
-  opacity: 1;
-  transition: opacity .5s;
-  margin: 0;
-
 }
 
 #itunes a img{
   display: inline-block;
   float: right;
-  width: auto;
-  height: auto;
-  transition: opacity .5s;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
 }
 
-#itunes:hover img{
-  opacity: 1;
-}
-
-#itunes:hover #getKatie{
-  opacity: 0;
+#itunes a {
+  text-decoration: none;
 }
 
 #soundcloud iframe {
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 321px){
+  #itunes a img{
+    width: 175px;
+    height: auto;
+    padding-top: 1em;
+    padding-bottom: 3px;
+  }
+
+  #itunes #getKatie{
+    font-size: 1.4em;
+    padding-top: 46px;
+  }
+}
+
+@media screen and (min-width: 321px){
+
+
+} /*end tablet media query*/
+
+@media screen and (min-width: 668px){
+
+  #itunes a img{
+    width: auto;
+    height: auto;
+    transition: opacity .5s;
+  }
+
+
+  #itunes:hover img{
+    opacity: 0;
+  }
+
+  #itunes:hover #getKatie{
+    opacity: 0;
+  }
+
+  #itunes #getKatie{
+    font-size: 6.7em;
+    float: left;
+    display: inline-block;
+    padding-top: 70px;
+    padding-right: 5px;
+    transition: opacity .5s;
+  }
+} /*end computer media query*/
