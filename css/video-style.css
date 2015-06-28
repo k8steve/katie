@@ -44,6 +44,8 @@
   width: 100%;
   height: auto;
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .box .bottom {
@@ -85,7 +87,36 @@ transform: rotateX( -60deg ) translateZ( -50px ) ;
   margin-top: -65px;
   z-index: 5;
   text-indent: 0.25em;
+  display: block;
+  transition: 0.2s ease;
 }
 
+/*.front:hover .playbutton{
+  display: block;
+}
+*/
+.playbutton:hover {
+  cursor: pointer;
+  cursor: hand;
+  color: black;
+  border: 10px solid black;
+}
+
+.playVideo:first-child {
+  display: block;
+}
+
+img + .playVideo{
+  display: none;
+}
+
+.videoEmbed {
+  margin: 0, auto;
+  padding: 0;
+  display: block;
+}
+
+/*iframe body { margin: 0px; }
+*/
 
 
